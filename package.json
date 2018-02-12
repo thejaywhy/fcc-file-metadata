@@ -1,0 +1,19 @@
+{
+  "name": "jy-fcc-file-metadata",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^3.0.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "6.12.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thejaywhy/fcc-file-metadata.git"
+  },
+  "license": "MIT"
+}
