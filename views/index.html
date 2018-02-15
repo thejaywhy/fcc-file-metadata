@@ -5,7 +5,6 @@
       <title>File Metadata Microservice thejaywhy </title>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
       <link href="/public/style.css" rel="stylesheet" type="text/css">
-
    </head>
 
    <body>
@@ -14,21 +13,33 @@
         <p>
         A solution to the <a href="https://www.freecodecamp.org/challenges/file-metadata-microservice">File Metadata Microservice</a> challenge.
         </p>   
-     <h3>Features</h3>
-      <ul>
-        <li>Allow FormData object to be submited that includes a file upload.</li>
-        <li>When a file is sent, return the filesize in bytes in a JSON response.</li>
-      </ul>
-    <h3>Example Usage</h3>
-      <div class="codeblock">
-        <h4>
-          Upload File
-        </h4>
-        <pre>
-        curl "https://jy-fcc-file-metadata.glitch.me/api/files"
-        </pre>
+        <h3>Features</h3>
+         <ul>
+           <li>Allow FormData object to be submited that includes a file upload.</li>
+           <li>When a file is sent, return the filesize in bytes in a JSON response.</li>
+         </ul>
+       <div>
+       <h3>
+       Test it!  
+       </h3>
+         <form action="/api/files" method="post" enctype="multipart/form-data">
+           <input type="file" name="file">
+           <input type="submit">
+         </form>
+       </div>
+       <div>
+         <h3>Example Usage</h3>
+           <div class="codeblock">
+             <h4>
+             Upload File
+             </h4>
+             <pre>
+             ccurl "https://jy-fcc-file-metadata.glitch.me/api/files" -F "file=@/path/to/file"
+             {"size":1948}
+             </pre>
+          </div>
+        </div>
       </div>
-    </div>
    </body>
 
 </html>
